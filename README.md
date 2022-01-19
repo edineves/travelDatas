@@ -1,2 +1,2 @@
-https://github.com/edineves/travelDatas.git
+ https://edineves.github.io/travelDatas/
  
