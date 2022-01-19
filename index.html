@@ -24,81 +24,88 @@
 
             local de saida:
             <input  type="text" 
-            name="localSaida"
-            size="80"
-            maxlength="80"
-            placeholder="nome do local">
+                    name="localSaida"
+                    size="80"
+                    maxlength="80"
+                    placeholder="nome do local">
 
             data de saída:
-            <input  type=" date" 
-            name="dataSaida">
+            <input  type="date"  
+                    name="dataSaida"
+                    value="2018-07-22"
+                    min="2022-01-20"        
+                    max="2023-12-31">
 
             hora da saída:
-            <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+            <input type="time" 
+                    name="horaSaida" 
+                    value="00:00">
 
             data de chegada:
-            <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+            <input  type="date"  
+                    name="dataChegada"
+                    value="2018-07-22"
+                    min="2022-01-20"        
+                    max="2023-12-31">           
 
             hora de chegada:
-            <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+            <input type="time" 
+            name="horaChegada" 
+            value="24:00">           
 
             local de chegada:
-            <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+            <input  type="text" 
+                    name="localChegada"
+                    size="80"
+                    maxlength="80"
+                    placeholder="nome do local">          
 
             km percorrido:
-            <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+            <input  type="number"
+                    name="kmPercorrido" 
+                    placeholder="0" 
+                    step="0" 
+                    min="0" 
+                    max="2000">
 
             gasto com gasolina:
             <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+                    name="gasolina"
+                    placeholder="2.0" 
+                    step="0.01" 
+                    min="0" 
+                    max="900">
+           
 
             gasto com pedagio:
             <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+                    name="pedagio"
+                    placeholder="2.0" 
+                    step="0.01" 
+                    min="0" 
+                    max="900">
 
             gasto com refeições:
             <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
+                    name="refeicoes"
+                    placeholder="2.0" 
+                    step="0.01" 
+                    min="0" 
+                    max="900">
 
             outros custos:
             <input  type="number" 
-            name="dia"
-            value="0"
-            min="0"
-            max="99">
-
+                    name="outrosCustos"
+                    placeholder="2.0" 
+                    step="0.01" 
+                    min="0" 
+                    max="2000">
             <fieldset>  
                 observações:
             </fieldset>
+
+            <input type="submit">
+
         </form>
 
     </main> 
