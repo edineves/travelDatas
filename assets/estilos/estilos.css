@@ -1,3 +1,15 @@
 .formulario{
    background-color: aquamarine; 
+   border: 11px;
+   font-weight: 600;
+   padding: 10%;
+   text-transform: uppercase;
+   grid-row: inherit;
+   align-items: center;
+   width: 100%;
+
+}
+
+.input{
+    align-items: center;
 }
