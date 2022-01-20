@@ -23,8 +23,7 @@
         <form action="incluirDados.php" method="get" class="formulario">
             <fieldset>
                 dia:
-                <input class="input" type="number" name="dia" value="0" min="0" max="99">
-                <br> local de saida:
+                <input class="input" type="number" name="dia" value="0" min="0" max="99"> <br> local de saida:
                 <input class="input" type="text" name="localSaida" size="80" maxlength="80" placeholder="nome do local"> <br> data de saída:
                 <input class="input" type="date" name="dataSaida" value="2018-07-22" min="2022-01-20" max="2023-12-31"><br> hora da saída:
                 <input class="input" type="time" name="horaSaida" value="00:00"><br> data de chegada:
@@ -32,20 +31,15 @@
                 <input class="input" type="time" name="horaChegada" value="24:00"><br> local de chegada:
                 <input class="input" type="text" name="localChegada" size="80" maxlength="80" placeholder="nome do local"><br>
             </fieldset>
-            <fieldset>
 
+            <fieldset>
                 km percorrido:
-                <input class="input" type="number" name="kmPercorrido" placeholder="0" step="0" min="0" max="2000"><br> gasto com gasolina:
+                <input type="number" name="kmPercorrido" placeholder="0" step="0" min="0" max="2000"><br> gasto com gasolina:
                 <input class="input" type="number" name="gasolina" placeholder="2.0" step="0.01" min="0" max="900"> <br> gasto com pedagio:
                 <input class="input" type="number" name="pedagio" placeholder="2.0" step="0.01" min="0" max="900"><br> gasto com refeições:
                 <input class="input" type="number" name="refeicoes" placeholder="2.0" step="0.01" min="0" max="900"><br> outros custos:
-                <input class="input" type="number" name="outrosCustos" placeholder="2.0" step="0.01" min="0" max="2000"> <br>
-            </fieldset>
-
-            <fieldset>
-                observações:
+                <input class="input" type="number" name="outrosCustos" placeholder="2.0" step="0.01" min="0" max="2000"> <br> observações:
                 <input class="input" type="text" name="obs" size="80" maxlength="80" placeholder="informações adicionais "> <br>
-
             </fieldset>
 
             <input class="input" type="submit"><br>
