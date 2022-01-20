@@ -1,4 +1,6 @@
-body {}
+body {
+    background-image: url(/imgs/fundo.jpg);
+}
 
 .formulario {
     background-color: rgb(186, 229, 215);
