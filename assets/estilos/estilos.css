@@ -1,4 +1,5 @@
 .corpo {
+    background-color: rgb(168, 164, 164);
     background-image: url(/imgs/fundo.jpg);
     background-size: cover;
     margin: auto;
