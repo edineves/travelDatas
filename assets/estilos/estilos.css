@@ -1,32 +1,56 @@
-                    <<<<<<< Updated upstream body {
-                    background-color: rgb(104, 92, 92);
-                }
-                
-                .formulario {
-                    background-color: rgb(186, 229, 215);
-                    border: 11px;
-                    =======.corpo {
-                        background-color: rgb(151, 148, 148);
-                        background-image: url(/imgs/fundo.jpg);
-                        background-size: cover;
-                        margin: auto;
+                        <<<<<<< Updated upstream body {
+                        background-color: rgb(104, 92, 92);
                     }
+                    
                     .formulario {
-                        background-color: rgb(186, 231, 199);
-                        border: 5px;
-                        >>>>>>>Stashed changes font-weight: 500;
-                        padding: 1% 7%;
-                        text-transform: uppercase;
-                        width: 60%;
-                        align-items: center;
-                        justify-content: space-around;
-                        flex-shrink: 2.3;
-                        margin-left: 15%;
-                    }
-                    .input {
-                        align-items: center;
-                        width: 70%;
-                        justify-content: space-around;
-                        flex-grow: 2.3;
-                        margin-left: 1%;
-                    }
+                        background-color: rgb(186, 229, 215);
+                        border: 11px;
+                        =======.corpo {
+                            background-color: rgb(151, 148, 148);
+                            background-image: url(/imgs/fundo.jpg);
+                            background-size: cover;
+                            margin: auto;
+                        }
+                        .formulario {
+                            background-color: rgb(186, 231, 199);
+                            border: 5px;
+                            >>>>>>>Stashed changes font-weight: 500;
+                            padding: 1% 7%;
+                            text-transform: uppercase;
+                            width: 60%;
+                            align-items: center;
+                            justify-content: space-around;
+                            flex-shrink: 2.3;
+                            margin-left: 15%;
+                        }
+                        .input {
+                            align-items: center;
+                            width: 70%;
+                            justify-content: space-around;
+                            flex-grow: 2.3;
+                            margin-left: 1%;
+                        }
+                        .corpo {
+                            background-color: rgb(168, 164, 164);
+                            background-image: url(/imgs/fundo.jpg);
+                            background-size: cover;
+                            margin: auto;
+                        }
+                        .formulario {
+                            background-color: rgb(192, 223, 201);
+                            border: 11px;
+                            font-weight: 500;
+                            padding: 15%;
+                            text-transform: uppercase;
+                            width: 60%;
+                            align-items: center;
+                            justify-content: space-around;
+                            flex-grow: 1.2;
+                            margin-left: 5%;
+                        }
+                        .input {
+                            align-items: center;
+                            width: 60%;
+                            justify-content: space-around;
+                            flex-grow: 1.2;
+                        }
