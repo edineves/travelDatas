@@ -163,17 +163,34 @@
 			// 5 - Tentativa de inserção de registro
 			// .1 - Criação da variável com o comando de inserção SQL
 			
-			$sql="INSERT INTO pets (	
-						nome  , 
-						sexo, 
-						tipo, 
-						nomeDono,       
-						idade ) VALUES (
-						'$nome', 
-						'$sexo',  
-						'$tipo',  
-						'$nomeDono',  
-						$idade )";
+			$sql="INSERT INTO travelDates (	
+						dia, 
+                        localSaida, 
+                        dataSaida, 
+                        horaSaida, 
+                        dataChegada, 
+                        horaChegada,
+                        localChegada, 
+                        kmPercorrido, 
+                        gasolina, 
+                        pedagio, 
+                        refeicoes, 
+                        outrosCustos, 
+                        obs					
+                        ) VALUES (
+						'$dia', 
+						'$localSaida',  
+						'$dataSaida',  
+						'$horaSaida',
+                        '$dataChegada', 
+						'$horaChegada',  
+						'$localChegada',  
+						'$KmPercorrido',
+                        '$gasolina',  
+						'$pedagio',  
+						'$reficoes',
+                        '$outrosCustos',                 
+						 $obs )";
 			
 			// Visualizar o comando e testar p/ ver se não está com erros
 			// Mostro na tela e copio e colo no console do MYSQL
@@ -194,12 +211,12 @@
 						mysqli_error($con)
 				);
 			
-			echo "Pet <b>$nome</b> incluído com sucesso!";
+			echo "travelDates <b>$dia</b> incluído com sucesso!";
 			
 		?>
 		
 		<br><br>
-		Clique <a href="novoPet.html">aqui</a> para cadastrar um novo Pet!<br>
-		Clique <a href="listagem.php">aqui</a> para listar os pets cadastrados!<br>
+		Clique <a href="index.html">aqui</a> para cadastrar um novo trecho!<br>
+		Clique <a href=" listagem ">aqui</a> para listar os dados cadastrados!<br>
 	</body>
-</html>
+</html> 
