@@ -1,9 +1,11 @@
-body {
+.corpo {
     background-image: url(/imgs/fundo.jpg);
+    background-size: cover;
+    margin: auto;
 }
 
 .formulario {
-    background-color: rgb(186, 229, 215);
+    background-color: rgb(174, 218, 187);
     border: 11px;
     font-weight: 500;
     padding: 15%;
