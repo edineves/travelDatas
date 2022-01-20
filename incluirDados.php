@@ -30,46 +30,95 @@
 			// Vetor é o nome dado para uma matriz de 1 dimensão (coluna)
 			
 			// 1. Receber os dados do formulário em variáveis
-			$dia		= $_GET["dia"] ;
-			$localSaida	= $_GET["localSaida"] ;
-			$dataSaida		= $_GET["dataSaida"] ;
-			$horaSaida	= $_GET["horaSaida"] ;
-			$dataChegada		= $_GET["dataChegada"] ;
-            $horaChegada		= $_GET["horaChegada"] ;
-			$kmPercorrido		= $_GET["kmPercorrido"] ;
-			$gasolina		= $_GET["gasolina"] ;
-			$pedagio	= $_GET["pedagio"] ;
-			$refeicoes	= $_GET["refeicoes"] ;
-            $outrosCustos	= $_GET["outrosCustos"] ;
-			$obs		= $_GET["obs"] ;
-    
+			$dia		 = $_GET["dia"] ;
+			$localSaida	 = $_GET["localSaida"] ;
+			$dataSaida	 = $_GET["dataSaida"] ;
+			$horaSaida	 = $_GET["horaSaida"] ;
+			$dataChegada = $_GET["dataChegada"] ;
+            $horaChegada = $_GET["horaChegada"] ;
+            $localChegada= $_GET["localChegada"] ;
+			$kmPercorrido= $_GET["kmPercorrido"] ;
+			$gasolina	 = $_GET["gasolina"] ;
+			$pedagio	 = $_GET["pedagio"] ;
+			$refeicoes	 = $_GET["refeicoes"] ;
+            $outrosCustos= $_GET["outrosCustos"] ;
+			$obs		 = $_GET["obs"] ;    
 			
 			// 2. Validar alguns dados básicos
 			/*
 				= Operador de atribuição (permite atribuir um valor p/ a variável)
 				== Operador de comparação (compara o valor da esquerda com o da direita)
 			*/
-			if ($nome=="") 
+			if ($dia==" ") 
 			{
-				die("Nome do <b>Pet</b> deve ser informado. Sistema interrompido.");
+				die("O<b>dia</b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($nomeDono=="")
+			if ($localSaida==" ")
 			{
-				die("Nome do <b>Dono do Pet</b> deve ser informado. Sistema interrompido.");
+				die("O <b> localSaida </b> deve ser informado. Sistema interrompido.");
 			}
 			
-			if ($tipo=="")
+			if ($dataSaida==" ")
 			{
-				die("Escolha um <b>tipo</b> válido. Sistema interrompido.");
+				die("informe a <b>dataSaida</b> válida. Sistema interrompido.");
+			}
+            if ($horaSaida==" ")
+			{
+				die("Informe  <b>horaSaida</b> válida. Sistema interrompido.");
+			}
+            if ($dataChegada==" ")
+			{
+				die("Escolha um <b>tipo</b> válida. Sistema interrompido.");
+			}
+            if ($horaChegada==" ")
+			{
+				die(" Informe <b>horaChegada</b> válida. Sistema interrompido.");
+			}
+            if ($localchegada==" ")
+			{
+				die("Informe <b>localChegada </b> válido. Sistema interrompido.");
+			}
+            if ($kmPercorrido==" ")
+			{
+				die("Informe<b> kmPercorrido </b> válido. Sistema interrompido.");
+			}
+            if ($gasolina==" ")
+			{
+				die("Informe <b>gasolina </b> válido. Sistema interrompido.");
+			}
+            if ($pedagio==" ")
+			{
+				die("Informe <b> pedagio </b> válido. Sistema interrompido.");
+			}
+            if ($refeicoes==" ")
+			{
+				die("Informe <b> refeicoes </b> válido. Sistema interrompido.");
+			}
+            if ($outrosCustos==" ")
+			{
+				die("Informe <b>outrosCustos</b> válido. Sistema interrompido.");
+			}
+            if ($obs==" ")
+			{
+				die("Informe <b>obs</b> válido. Sistema interrompido.");
 			}
 			
 			// 3 - Exibindo os dados vindos do formulário
-			echo "O nome do pet é <b>$nome</b><br>";
-			echo "Seu sexo é <b>$sexo</b><br>";
-			echo "Ele é do tipo: <b>$tipo</b><br>";
-			echo "Nome do dono: <b>$nomeDono</b><br>";
-			echo "Idade do Pet: <b>$idade</b><hr>";
+			echo "dias na estrada <b>$dia</b><br>";
+			echo "Local de inicio da viajem <b>$localSaida</b><br>";
+			echo "data do inicio do trecho: <b>$dataSaida</b><br>";
+			echo "hora de saida: <b>$horaSaida</b><br>";
+			echo "data de chegada no destino: <b>$dataChegada</b><hr>";
+            echo "hora de chegada no destino: <b>$horaChegada</b><br>";
+			echo "Nome do local de chegada: <b>$localChegada</b><br>";
+			echo "Distância percorrida: <b>$kmPercorrido</b><br>";
+			echo "valor pago em gasolina: <b>$gasolina</b><br>";
+			echo "valor pago com pedágio: <b>$pedagio</b><hr>";
+            echo "valor pago com refeições: <b>$reficoes</b><br>";
+			echo "Outros custos no trecho: <b>$outrosCustos</b><br>";
+			echo "Observações quanto ao percurso: <b>$obs</b><br>";
+		
 			
 			// 4 - Abrindo o banco de dados
 			// .1- Conexão com o servidor
@@ -105,7 +154,7 @@
 			// p1 - objeto de conexão existente
 			// p2 - nome do banco de dados (string)
 			
-			mysqli_select_db($con, "sgp") or 
+			mysqli_select_db($con, "travel") or 
 				die(
 					"Erro na abertura do banco de dados!: <br>" .
 					mysqli_error($con)
