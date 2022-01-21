@@ -1,26 +1,84 @@
 .corpo {
-    background-color: rgb(168, 164, 164);
     background-image: url(/imgs/fundo.jpg);
     background-size: cover;
     margin: auto;
 }
 
 .formulario {
-    background-color: rgb(192, 223, 201);
+    background-color: rgb(168, 164, 164);
     border: 11px;
     font-weight: 500;
     padding: 15%;
     text-transform: uppercase;
-    width: 60%;
+    width: 50%;
     align-items: center;
     justify-content: space-around;
     flex-grow: 1.2;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-top: 2%;
 }
 
 .input {
     align-items: center;
-    width: 60%;
+    pointer-events: center;
+}
+
+.input__dia {
+    width: 8rem;
+    align-items: center;
     justify-content: space-around;
     flex-grow: 1.2;
+    padding: 1%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+.input__saida {
+    width: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1.2;
+    padding: 1%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+.input__chegada {
+    width: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1.2;
+    padding: 1%;
+    margin-left: auto;
+}
+
+.input__demais {
+    width: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1.2;
+    padding: 1%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+.input__obs {
+    width: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1.2;
+    padding: 1% 2%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+.botao {
+    background-color: rgb(233, 122, 81);
+    width: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1.2;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 1% 2%;
 }
