@@ -62,7 +62,7 @@
 			{
 				die("Informe <b>localChegada </b> válido. Sistema interrompido.");
 			}
-            if ($kmPerc		orrido==" ")
+            if ($kmPercorrido==" ")
 			{
 				die("Informe<b> kmPercorrido </b> válido. Sistema interrompido.");
 			}
