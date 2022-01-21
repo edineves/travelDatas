@@ -4,15 +4,19 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<title> Inclusão de dados do trecho </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link rel="stylesheet" href="assets/estilos/estilos.css">
 	</head>
-
-	<body>
-		<h1>Sistema Gerencial de Dados</h1>
+	<body class="listagem">
+		<h1> Sistema Gerencial de Dados </h1>
 		<h3> incluir os dados do trecho </h3>
 
 		<?php			
-			// Variável
-			
+			// Variável			
 			// 1. Receber os dados do formulário em variáveis
 
 			$dia		 = $_GET["dia"] ;
@@ -136,7 +140,7 @@
                         refeicoes, 
                         outrosCustos, 
                         obs					
-                        ) VALUES (
+                        ) VALUES(
 						'$dia', 
 						'$localSaida',  
 						'$dataSaida',  
@@ -160,12 +164,11 @@
 						mysqli_error($con)
 				);
 			
-			echo "travelDates <b >$dia </b> incluído com sucesso!";
-			
+			echo "travelDates <b >$dia </b> incluído com sucesso!";			
 		?>
 		
-		<br><br>
-		Clique <a href="index.html">aqui</a> para cadastrar um novo trecho!<br>
-		Clique <a href=" listagem ">aqui</a> para listar os dados cadastrados!<br>
+		<br>
+		Clique <a href="index.html">aqui</a> para cadastrar um novo trecho<br>
+		Clique <a href="listagem.php">aqui</a> para listar os dados cadastrados<br>
 	</body>
 </html> 
