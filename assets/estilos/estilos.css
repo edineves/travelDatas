@@ -1,6 +1,16 @@
 .corpo {
+    background-color: rgb(204, 197, 197);
     background-image: url(/assets/fundo.jpg);
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.listagem {
+    background-color: rgb(185, 175, 175);
     font-family: 'Poppins', sans-serif;
     margin: auto;
     padding: 5%;
