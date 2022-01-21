@@ -1,7 +1,11 @@
 .corpo {
-    background-image: url(/imgs/fundo.jpg);
+    background-image: url(/assets/fundo.jpg);
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
     margin: auto;
+    padding: 5%;
+    align-items: center;
+    text-align: center;
 }
 
 .formulario {
@@ -29,8 +33,8 @@
     justify-content: space-around;
     flex-grow: 1.2;
     padding: 1%;
-    margin-left: auto;
-    margin-top: 2%;
+    margin: auto;
+    margin-bottom: 2%;
 }
 
 .input__saida {
@@ -40,7 +44,7 @@
     flex-grow: 1.2;
     padding: 1%;
     margin-left: auto;
-    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .input__chegada {
@@ -50,6 +54,7 @@
     flex-grow: 1.2;
     padding: 1%;
     margin-left: auto;
+    margin-bottom: 2%;
 }
 
 .input__demais {
@@ -59,7 +64,7 @@
     flex-grow: 1.2;
     padding: 1%;
     margin-left: auto;
-    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .input__obs {
@@ -69,7 +74,7 @@
     flex-grow: 1.2;
     padding: 1% 2%;
     margin-left: auto;
-    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .botao {
@@ -79,6 +84,6 @@
     justify-content: space-around;
     flex-grow: 1.2;
     margin-left: 3%;
-    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 1% 2%;
 }
