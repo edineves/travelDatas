@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> travel Datas </title>
 
+    <link rel="stylesheet" href="assets/estilos/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/estilos/estilos.css">
     <link rel="stylesheet" href="incluirDados.php">
 
@@ -21,39 +28,49 @@
         <h3> Inclusão dos dados do trecho </h3>
 
         <form action="incluirDados.php" method="get" class="formulario">
-            <fieldset>
-                dia: <br>
-                <input class="input" type="number" name="dia" value="0" min="0" max="99"> <br> local de saida:
-                <input class="input" type="text" name="localSaida" size="80" maxlength="80" placeholder="nome do local"> <br> data de saída:
-                <input class="input" type="date" name="dataSaida" value="2022-01-20" min="2022-01-20" max="2023-12-31"><br> hora da saída:
-                <input class="input" type="time" name="horaSaida" value="00:00"><br> data de chegada:
-                <input class="input" type="date" name="dataChegada" value="2022-01-20" min="2022-01-20" max="2023-12-31"> <br> hora de chegada:
-                <input class="input" type="time" name="horaChegada" value="24:00"><br> local de chegada:
-                <input class="input" type="text" name="localChegada" size="80" maxlength="80" placeholder="nome do local"><br>
+            <fieldset class="input">
+                dia:
+                <input class="input__dia" type="number" name="dia" value="0" min="0" max="99">
+                <br> local de saida:
+                <input class="input__saida" type="text" name="localSaida" size="80" maxlength="80" placeholder="nome do local">
+                <br> data de saída:
+                <input class="input__saida" type="date" name="dataSaida" value="2022-01-20" min="2022-01-20" max="2023-12-31">
+                <br> hora da saída:
+                <input class="input__saida" type="time" name="horaSaida" value="00:00">
+                <br> data de chegada:
+                <input class="input__chegada" type="date" name="dataChegada" value="2022-01-20" min="2022-01-20" max="2023-12-31">
+                <br> hora de chegada:
+                <input class="input__chegada" type="time" name="horaChegada" value="24:00">
+                <br> local de chegada:
+                <input class="input__chegada" type="text" name="localChegada" size="80" maxlength="80" placeholder="nome do local">
+                <br>
             </fieldset>
+            <fieldset class="input">
+                km percorrido:
+                <input class="input__demais" type="number" name="kmPercorrido" placeholder="0" step="0" min="0" max="2000">
+                <br> gasto com gasolina:
+                <input class="input__demais" type="number" name="gasolina" placeholder="0.0" step="0.01" min="0" max="900">
+                <br> gasto com pedagio:
+                <input class="input__demais" type="number" name="pedagio" placeholder="0.0" step="0.01" min="0" max="900">
+                <br> gasto com refeições:
+                <input class="input__demais" type="number" name="refeicoes" placeholder="0.0" step="0.01" min="0" max="900">
+                <br> outros custos:
+                <input class="input__demais" type="number" name="outrosCustos" placeholder="0.0" step="0.01" min="0" max="2000">
+                <br> observações:
+                <input class="input__obs" type="text" name="obs" size="80" maxlength="80" placeholder="informações adicionais ">
+                <br>
+                <input class="botao" type="submit"><br>
 
-            <fieldset>
-                km percorrido: <br>
-                <input type="number" name="kmPercorrido" placeholder="0" step="0" min="0" max="2000"><br> gasto com gasolina:
-                <input class="input" type="number" name="gasolina" placeholder="0.0" step="0.01" min="0" max="900"> <br> gasto com pedagio:
-                <input class="input" type="number" name="pedagio" placeholder="0.0" step="0.01" min="0" max="900"><br> gasto com refeições:
-                <input class="input" type="number" name="refeicoes" placeholder="0.0" step="0.01" min="0" max="900"><br> outros custos:
-                <input class="input" type="number" name="outrosCustos" placeholder="0.0" step="0.01" min="0" max="2000"> <br> observações:
-                <input class="input" type="text" name="obs" size="80" maxlength="80" placeholder="informações adicionais "> <br>
             </fieldset>
-
-
 
         </form>
 
-        <input class="input" type="submit"><br>
 
 
     </main>
+
     <footer>
-
-        <h4> rodape </h4>
-
+        <h4> teste </h4>
     </footer>
 </body>
 
